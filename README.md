@@ -1,6 +1,25 @@
 # Background
 Interledger is an open source protocol used to send payments across disparate ledgers. The Interledger Protocol (ILP) facilitates the transfer of value between money systems by routing packets of money through a network of connectors that act as intermediate exchange platforms. 
 
+Moneyd is a local dameon process that runs locally and is the quickest way to connect to the ILP network.  Moneyd is currently available as an NPM package that is installed globally and is installed and executed using the command line instructions below.
+
+```
+npm install -g moneyd moneyd-uplink-xrp
+moneyd xrp:configure --testnet
+moneyd xrp:start --testnet
+```
+
+# The Problem
+While not a terribly complicated procedure, a few prerequisites must be met in order to ensure a successful installation and operation:
+
+- Install Node.js (version 8.9.4 or higher)
+
+- Set up node to install modules globally​
+
+- v​If you already have Moneyd installed, make sure to upgrade to the latest version. Moneyd version 4 or higher is required.
+
+Simple enough, however, installing npm packages globally can ofter cause permission headaches that require a series of steps to remedy. This added complexity is frustrating and can act as a barrier of entry for potential developer integrations with ILP. Additionally, future version releases of Moneyd must be tracked in order to maintain compatibility with the ILP network.
+
 # Solution
 ​Moneyd is a local dameon process that runs locally and is the quickest way to connect to the ILP network.
 
