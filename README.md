@@ -1,7 +1,7 @@
 # Background
 Interledger is an open source protocol used to send payments across disparate ledgers. The Interledger Protocol (ILP) facilitates the transfer of value between money systems by routing packets of money through a network of connectors that act as intermediate exchange platforms. 
 
-Moneyd is a local dameon process that runs locally and is the quickest way to connect to the ILP network.  Moneyd is currently available as an NPM package that is installed globally and is installed and executed using the command line instructions below.
+Moneyd is a local dameon process that runs locally and is the quickest way to connect to the ILP network.  Moneyd is currently available as an NPM package that is installed and executed using the command line instructions below.
 
 ```
 npm install -g moneyd moneyd-uplink-xrp
