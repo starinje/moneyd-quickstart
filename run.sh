@@ -43,9 +43,3 @@ if [ "$NETWORK_TYPE" == "test" ]
         echo $LEDGER_SECRET | moneyd "$LEDGER_TYPE:configure"
         moneyd "$LEDGER_TYPE:start"
 fi
-
-echo $ILP_PLUGIN
-
-echo $ILP_CREDENTIALS
-
-# add functionality to run moneydGUI in parallel
