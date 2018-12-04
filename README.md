@@ -40,7 +40,7 @@ The application supports the following input arguments provided as environment v
 
 - LEDGER_SECRET - required only for livenet operation
 
-The Moneyd instance is now accessible at port 7768
+The Moneyd instance is now accessible at localhost:7768
 
 
 
