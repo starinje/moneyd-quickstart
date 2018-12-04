@@ -15,11 +15,11 @@ docker run -d -p 7768:7768 -e LEDGER_SECRET='****************' -e LEDGER_TYPE=xr
 
 The application supports the following input arguments provided as environment variables:
 
--LEDGER_TYPE - supported values: 'xrp', 'eth'
+- LEDGER_TYPE - supported values: 'xrp', 'eth'
 
--NETWORK_TYPE - supported values: 'local', 'test', 'live'
+- NETWORK_TYPE - supported values: 'local', 'test', 'live'
 
--LEDGER_SECRET - required only for livenet operation
+- LEDGER_SECRET - required only for livenet operation
 
 The Moneyd instance is now accessible at port 7768
 
