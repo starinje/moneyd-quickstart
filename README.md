@@ -36,7 +36,7 @@ The application supports the following input arguments provided as environment v
 
 - LEDGER_TYPE - supported values: 'xrp', 'eth'
 
-- NETWORK_TYPE - supported values: 'local', 'test', 'live'
+- NETWORK_TYPE - supported values: 'test', 'live'
 
 - LEDGER_SECRET - required only for livenet operation
 
