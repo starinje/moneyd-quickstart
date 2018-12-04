@@ -16,7 +16,7 @@ While not a terribly complicated procedure, a few prerequisites must be met in o
 
 - Set up node to install modules globally​
 
-- v​If you already have Moneyd installed, make sure to upgrade to the latest version. Moneyd version 4 or higher is required.
+- If you already have Moneyd installed, make sure to upgrade to the latest version. Moneyd version 4 or higher is required.
 
 Simple enough, however, installing npm packages globally can ofter cause permission headaches that require a series of steps to remedy. This added complexity is frustrating and can act as a barrier of entry for potential developer integrations with ILP. Additionally, future version releases of Moneyd must be tracked in order to maintain compatibility with the ILP network.
 
