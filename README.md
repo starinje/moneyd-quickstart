@@ -1,33 +1,27 @@
-# moneyd-quickstart
+#Background
+Interledger is an open source protocol used to send payments across disparate ledgers. The Interledger Protocol (ILP) facilitates the transfer of value between money systems by routing packets of money through a network of connectors that act as intermediate exchange platforms. 
 
-complete instructions on how to get an instance of moneyd running locally...
+​Moneyd is a local dameon process that runs locally and is the quickest way to connect to the ILP network.
 
-Problem:
-Connecting to Interleder is a bit confusing and multi-step currently. Assumes developer environment. 
-For example when trying to install moneyd globally kept getting permissions errors. Needed to make sure node version was correct, etc...
+In this proposed solution, Docker is used to containerize the Moneyd daemon, reducing overall installation and deployment procedure. Configuration and launching of the application are achieved via a single command for testnet and livenet environments for both eth and xrp plugins.
 
-Proposal:
-Dockerize moneyD so it can be deployed locally with a simple 'docker run' command
+Releases of the Moneyd Docker image are pushed to Docker Hub: https://hub.docker.com/r/starinje/moneyd-quickstart/​
 
-forked https://github.com/interledgerjs/moneyd
-added dockerFile to automate build.
-tied into TravisCI build that builds docker image and pushes to Docker Container Registry 
+To install and run Moneyd command line below is executed:
+```
+docker run -d -p 7768:7768 -e LEDGER_SECRET='****************' -e LEDGER_TYPE=xrp -e NETWORK_TYPE=live starinje/moneyd-quickstart:0.0.1
+```
 
-User can now run moneyD with the following steps
+The application supports the following input arguments provided as environment variables:
 
-Make sure docker is installed:
+-LEDGER_TYPE - supported values: 'xrp', 'eth'
 
-install docker instructions
+-NETWORK_TYPE - supported values: 'local', 'test', 'live'
 
-docker run "************************"
+-LEDGER_SECRET - required only for livenet operation
 
-Pull Docker Image:
+The Moneyd instance is now accessible at port 7768
 
-docker pull from docker hub...
 
-docker run -d -p 7768:7768 -e LEDGER_SECRET=snLFVV4DZ4kpnE2jj957iHueEHGJb -e LEDGER_TYPE=xrp -e NETWORK_TYPE=test moneyd-quickstart 
 
-TODO:
-
-Need to add travisCI file to build new docker image and push to container registry on git commit
 
