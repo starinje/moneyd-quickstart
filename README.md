@@ -1,6 +1,7 @@
-#Background
+# Background
 Interledger is an open source protocol used to send payments across disparate ledgers. The Interledger Protocol (ILP) facilitates the transfer of value between money systems by routing packets of money through a network of connectors that act as intermediate exchange platforms. 
 
+# Solution
 ​Moneyd is a local dameon process that runs locally and is the quickest way to connect to the ILP network.
 
 In this proposed solution, Docker is used to containerize the Moneyd daemon, reducing overall installation and deployment procedure. Configuration and launching of the application are achieved via a single command for testnet and livenet environments for both eth and xrp plugins.
