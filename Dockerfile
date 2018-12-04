@@ -9,11 +9,8 @@ COPY run.sh /ilp/run.sh
 
 RUN npm install -g moneyd moneyd-uplink-xrp moneyd-uplink-eth 
 
-EXPOSE 8080
 EXPOSE 7768
 
 RUN chmod +x run.sh 
 
 CMD ["./run.sh"]
-
-
